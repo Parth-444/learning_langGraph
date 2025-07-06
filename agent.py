@@ -20,11 +20,11 @@ graph_builder.add_edge(START, "chatbot") # when bot runs it goes to chatbot node
 graph_builder.add_edge("chatbot", END) # when the jobs done it ends
 graph = graph_builder.compile() # compiles all the graphs and nodes you've built until now.
 
-initial_state = {
-    "messages": [
-        {"role": "user", "content": "Hello, how are you?"}
-    ]
-}
-
-result = graph.invoke(initial_state)
-print(result)
+# initial_state = {
+#     "messages": [
+#         {"role": "user", "content": "Hello, how are you?"}
+#     ]
+# }
+#
+# result = graph.invoke(initial_state)
+# print(result)
